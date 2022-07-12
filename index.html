@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Uma Luz..</title>
+  <link rel="stylesheet" href="style.css">
+
+
+
+</head>
+
+<body>
+
+
+  <input id="botao" type="button" value="Acender" />
+  <div id="lampada">
+
+  </div>
+
+  <script>
+    let luz = false
+    let botao = document.getElementById("botao")
+    let lampada = document.getElementById("lampada")
+
+    botao.addEventListener("click", evt => {
+      luz = !luz
+
+      if (luz) {
+        lampada.style.backgroundColor = "yellow"
+        console.log("Ligado")
+      }
+      else {
+        lampada.style.backgroundColor = "black"
+        console.log("Desligado")
+      }
+    })
+  </script>
+
+
+
+</body>
+
+</html>

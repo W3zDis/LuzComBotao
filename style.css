@@ -1,0 +1,27 @@
+body {
+  background: black;
+}
+
+#botao {
+  color: lightyellow;
+  background-color: yellow;
+  border: 0px;
+  font-size: 60px;
+  border-radius: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50), translateY(-50);
+}
+
+#botao:active {
+  background-color: yellowgreen;
+  opacity: 10%;
+  box-shadow: 0px 0px 5px white;
+}
+
+#lampada {
+  background-color: white;
+  height: 100px;
+  width: 50px;
+}
